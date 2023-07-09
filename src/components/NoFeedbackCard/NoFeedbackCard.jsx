@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import noFeedbackImage from '../../assets/feedback.jpg';
+import noFeedbackImage from '../../assets/feedback_2.jpg';
 import { CardImage, CardText, CardWrapper } from './NoFeedbackCard.styled';
 
 const NoResultCard = ({ message }) => {
