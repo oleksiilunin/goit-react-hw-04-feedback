@@ -6,6 +6,8 @@ const StatisticList = styled.ul`
   gap: 8px;
   padding: 16px;
   width: 100%;
+  height: 100%;
+  max-height: 292px;
 
   border-radius: 16px;
   border: 1px solid #cececf;
