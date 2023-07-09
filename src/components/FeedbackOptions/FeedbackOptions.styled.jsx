@@ -31,31 +31,30 @@ const Button = styled.button`
 
   font-size: 16px;
   font-weight: 600;
-  background-color: ${props => {
-    if (props['data-rating'] === 'good') {
-      return '#00ff00';
-    } else if (props['data-rating'] === 'neutral') {
-      return '#ffff00';
-    } else if (props['data-rating'] === 'bad') {
-      return '#ff0000';
-    } else {
-      return '#d2d8db';
-    }
-  }};
 
   /* transition: box-shadow 0.3s ease; */
   box-shadow: #b4b4b4 2px 2px 0px;
   transition: transform 200ms, box-shadow 200ms;
 
+  &:hover,
+  &:focus {
+    background-color: ${props => {
+      if (props['data-rating'] === 'good') {
+        return '#00ff00';
+      } else if (props['data-rating'] === 'neutral') {
+        return '#ffff00';
+      } else if (props['data-rating'] === 'bad') {
+        return '#ff0000';
+      } else {
+        return '#d2d8db';
+      }
+    }};
+    /* box-shadow: #b4b4b4 2px 2px 0px; */
+    cursor: pointer;
+  }
   &:active {
     transform: translateX(2px) translateY(2px);
     box-shadow: #b4b4b4 0px 0px 0px;
-  }
-
-  &:hover,
-  &:focus {
-    /* box-shadow: #b4b4b4 2px 2px 0px; */
-    cursor: pointer;
   }
 `;
 
